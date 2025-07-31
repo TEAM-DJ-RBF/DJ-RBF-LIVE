@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DJ RBF</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background">
+    <img src="DJ_RBF_flyer_logo.jpg" alt="DJ RBF Flyer" class="flyer"/>
+    <div class="menu-button" onclick="toggleMenu()">☰</div>
+    <div id="dropdown" class="dropdown hidden">
+      <video controls src="video/video1.mp4"></video>
+      <video controls src="video/video2.mp4"></video>
+      <video controls src="video/video3.mp4"></video>
+      <video controls src="video/video4.mp4"></video>
+    </div>
+  </div>
+
+  <footer>
+    <canvas id="waveform"></canvas>
+    <div class="footer-links">
+      <a href="https://youtube.com/@dj_rbf">YouTube</a>
+      <span>|</span>
+      <a href="https://open.spotify.com/artist/4kKGZ5yUNmh33hrvyA1vh2">Spotify</a>
+      <span>|</span>
+      <a href="https://on.soundcloud.com/S0YWXqv5G7mMGqhwkw">SoundCloud</a>
+      <span>|</span>
+      <a href="https://www.tiktok.com/@official_rbf">TikTok</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
