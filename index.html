@@ -38,7 +38,21 @@
 <audio id="bg-music" autoplay loop>
   <source src="audio/background.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
+</audio> <audio id="bg-music" autoplay loop>
+  <source src="audio/background.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
 </audio>
+
+<script>
+  // Voor mobiel: activeer geluid na eerste klik
+  window.addEventListener('click', () => {
+    const audio = document.getElementById('bg-music');
+    if (audio && audio.paused) {
+      audio.play().catch(() => {});
+    }
+  }, { once: true });
+</script>
+
 
 <script>
   // Autoplay workaround voor mobiel
